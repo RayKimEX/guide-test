@@ -1,0 +1,114 @@
+/**
+ * Gitple Custom Styles
+ * Must to use "!important" for all attributes.
+ */
+
+.gp-header {
+  background-color: #fff !important;
+  border-bottom: solid 1px #e0e0e0 !important;
+}
+
+.gp-header-title {
+  font-size: 18px !important;
+  color: #495057 !important;
+  text-align: center;
+}
+
+.gp-close-btn,
+.gp-menu-btn {
+  color: #495057 !important;
+}
+
+.gp-home-intro-title {
+  color: #495057 !important;
+}
+
+.gp-home-start-btn {
+  background-color: #3F69AA !important;
+}
+
+/* chat page: body */
+.gp-chat-body {
+  background-color: #f8f9fa !important;
+}
+
+/* chat page: message box for user */
+.gp-chat-msg-user {
+  background-color: #766F57 !important;
+  color: #fff !important;
+  border: 0px !important;
+  font-weight: bold;
+  border-radius: 4px !important;
+}
+
+/* chat page: message box for agent */
+.gp-chat-msg-agent {
+  background-color: #fff !important;
+  border-radius: 4px !important;
+  border: solid 1px #e5e9f1 !important;
+}
+
+.gp-chat-msg-emoticon {
+  background-color: transparent !important;
+}
+
+.gp-chat-msg-emoticon .gp-chat-obj {
+  background-color: transparent !important;
+}
+
+
+/* chat page: message box for bot */
+.gp-chat-msg-bot {
+  background-color: #fff !important;
+  border-radius: 4px !important;
+  border: solid 1px #e5e9f1 !important;
+}
+
+/* chat page: message box for sys */
+.gp-chat-msg-sys {
+  font-size: 14px !important;
+  background-color: #fff !important;
+  border-radius: 4px !important;
+  border: solid 1px #e5e9f1 !important;
+}
+
+/* chat page: message box for object */
+.gp-chat-obj {
+  background-color: #fff !important;
+}
+
+/* chat page: message box for object text */
+.gp-chat-obj-text {
+  border-bottom: solid 1px #e5e9f1 !important;
+  border-radius: 4px !important;
+  padding: 7px 11px !important;
+  font-size: 14px !important;
+  word-break: keep-all !important;
+}
+
+/* chat page: message box for object list */
+.gp-chat-obj-list {
+  font-size: 14px !important;
+}
+
+
+/* chat page: message box for object button */
+.gp-chat-obj-btn {
+  font-size: 14px !important;
+  background-color: #3F69AA !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.gp-chat-footer-file-icon {
+  color: #333333 !important;
+}
+
+.gp-chat-footer-send-icon {
+  color: #333333 !important;
+}
+
+.gp-chat-footer-btn {
+  color: #fff !important;
+  background-color: #3F69AA !important;
+}

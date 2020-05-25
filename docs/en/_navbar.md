@@ -1,0 +1,1 @@
+<a href="javascript:langSwitcher('ko');">한국어</a>

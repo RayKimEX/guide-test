@@ -1,0 +1,5 @@
+- :bookmark: Shortcut 
+  - [:house: Service Guide First Page!](/)
+  - [:bulb: Quick start guide](en/tutorial.md)
+  - [Chat workspace:arrow_right:](https://workspace.gitple.io)
+  - [Gitple home(gitple.io) :arrow_right:](http://gitple.io/en)

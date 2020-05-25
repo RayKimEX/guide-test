@@ -1,0 +1,30 @@
+.markdown-section pre > code {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.sidebar-toggle {
+  position: relative !important;
+}
+.sidebar-toggle span {
+  width: 30px;
+  height: 3px;
+}
+
+.app-nav {
+  margin: 15px 60px 0 0;
+  color: #42b983;
+}
+.app-nav li:hover ul {
+  width: 100px !important;
+}
+.app-nav a.active {
+  border-bottom: none;
+}
+
+.search {
+  margin-top: 30px;
+}

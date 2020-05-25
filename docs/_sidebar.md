@@ -1,0 +1,36 @@
+- 워크스페이스 - 일반 메뉴
+  - [상담](ws-chat.md)
+  - [대시보드](ws-dashboard.md)
+  - [통계](ws-report.md)
+  - [세션](ws-sessions.md)
+  - [고객](ws-customers.md)
+- 워크스페이스 - 설정 메뉴
+  - [FAQ 관리](ws-faq.md)
+  - [저장된 답변](ws-canned.md)
+  - [태그](ws-tags.md)
+  - [상담사 관리](ws-settings-agents.md)
+  - [배정](ws-settings-routing.md)
+  - [업무 시간](ws-settings-hours.md)
+  - [앱 관리](ws-settings-app.md)
+  - [사전](ws-settings-dictionary.md)
+  - [결제](ws-settings-billing.md)
+  - [프로필](ws-user-profile.md)
+- 채팅앱 연동
+  - [웹 (Web)](web-sdk-list.md)
+  - [안드로이드 (Android)](android-sdk-list.md)
+  - [애플 (iOS)](ios-sdk-list.md)
+  - [하이브리드 (Hybrid)](hybrid-sdk-list.md)
+  - [전체 리스트](sdk-list.md)
+- 알림 설정
+  - [기본 알림](alerts.md)
+  - [추가 알림](externalalerts.md)
+- 외부 연동
+  - [챗봇(Bot) SDK](bot-sdk.md)
+  - [오픈(REST) API](open-api.md)
+  - [이벤트(Outgoing) API](event-api.md)
+- [문제 해결](troubleshooting.md)
+- Misc
+  - [비즈챗](bizchat.md)
+  - [세션메타](session-meta.md)
+  - [카카오톡 채널](kakao.md)
+  - [다국어 고객지원](multilang.md)

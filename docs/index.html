@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gitple Guide</title>
+  <meta name="description" content="Gitple Chat Service Guide and Platform Integration SDK">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="/assets/style/vue.css">
+  <link rel="stylesheet" href="/assets/style/style.css">
+  <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon-16x16.png"/>
+
+<script>
+
+/* Gitple Web SDK */
+window.GitpleConfig = {
+  appCode: '8a6wdaiCGKlLSsndlKzh1UGe9SSRiq2s'
+};
+
+!function(){function e(){function e(){var e=t.contentDocument,a=e.createElement("script");a.type="text/javascript",a.async=!0,a.src=window[n]&&window[n].url?window[n].url+"/inapp-web/gitple-loader.js":"https://app.gitple.io/inapp-web/gitple-loader.js",a.charset="UTF-8",e.head&&e.head.appendChild(a)}var t=document.getElementById(a);t||((t=document.createElement("iframe")).id=a,t.style.display="none",t.style.width="0",t.style.height="0",t.addEventListener?t.addEventListener("load",e,!1):t.attachEvent?t.attachEvent("onload",e):t.onload=e,document.body.appendChild(t))}var t=window,n="GitpleConfig",a="gitple-loader-frame";if(!window.Gitple){document;var i=function(){i.ex&&i.ex(arguments)};i.q=[],i.ex=function(e){i.processApi?i.processApi.apply(void 0,e):i.q&&i.q.push(e)},window.Gitple=i,t.attachEvent?t.attachEvent("onload",e):t.addEventListener("load",e,!1)}}();
+
+Gitple('boot');
+
+
+function langSwitcher(param) {
+  GitpleConfig.userLang = param;
+
+  if (param === 'en') {
+    document.location.href = '//' + document.location.host + '/#/en/';
+  } else {
+    document.location.href = '//' + document.location.host + '/#/';
+  }
+
+  Gitple('update');
+}
+
+function inappOpenByLang(param) {
+  GitpleConfig.userLang = param;
+
+  Gitple('update');
+  Gitple('open');
+}
+
+/* browser language */
+/*
+var userLangString = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage;
+var userLang = (userLangString.split(/[_-]/)[0]).toLowerCase();
+if (userLang === 'ko') {
+  document.location.href = '//' + document.location.host + '/#/';
+} else {
+  // TODO: remove comment when English version done
+  document.location.href = '//' + document.location.host + '/#/en/';
+  // document.location.href = '//' + document.location.host + '/#/';
+} */
+</script>
+
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'Gitple',
+    subMaxLevel: 4, // Add table of contents (TOC) in custom sidebar.
+    loadNavbar: true, // TODO: change to true when English version done
+    loadSidebar: true,
+    fallbackLanguages: ['en', 'ko'],
+    auto2top: true,
+    autoHeader: false,
+    ga: 'UA-89348571-3',
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: [
+        '/',
+        '/ws-settings',
+        '/ws-faq',
+        '/ws-canned',
+        '/ws-tags',
+        '/ws-settings-agents',
+        '/ws-settings-bot',
+        '/ws-settings-routing',
+        '/ws-settings-hours',
+        '/ws-settings-basic',
+        '/ws-settings-inapp',
+        '/ws-inapp-test',
+        '/ws-settings-dictionary',
+        '/ws-settings-billing',
+        '/ws-user-profile'
+      ],
+      placeholder: {
+        '/': 'Search',
+        '/en/': 'Search'
+      },
+      noData: {
+        '/': '결과 없음',
+        '/en/': 'No Results'
+      },
+      // Headline depth, 1 - 6
+      depth: 4
+    }
+  }
+</script>
+<script src="//unpkg.com/docsify@4.6.10/lib/docsify.js"></script>
+<!--<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>-->
+<script src="//unpkg.com/docsify@4.6.10/lib/plugins/ga.min.js"></script>
+<script src="//unpkg.com/docsify@4.6.10/lib/plugins/search.min.js"></script>
+</html>
